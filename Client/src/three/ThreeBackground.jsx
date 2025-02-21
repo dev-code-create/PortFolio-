@@ -12,13 +12,14 @@ const ThreeBackground = () => {
         width: "100%",
         height: "100%",
         zIndex: 0,
+
         // Prevent interaction with the canvas
       }}
     >
       <Stars />
       <ambientLight intensity={0.1} />
       <spotLight position={[10, 10, 10]} angle={0.3} />
-      <OrbitControls />
+      <OrbitControls enableZoom={false} />
     </Canvas>
   );
 };
