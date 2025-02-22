@@ -5,7 +5,7 @@ import {
   Book,
   Linkedin,
   Instagram,
-  X,
+  Twitter,
   Github,
 } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -18,33 +18,33 @@ const navItems = [
     label: "Projects",
     link: "/projects",
   },
-  { id: 3, icon: <Book size={24} />, label: "Blog", link: "#blog" },
+
   {
-    id: 4,
+    id: 3,
     icon: <Linkedin size={24} />,
     label: "LinkedIn",
-    link: "https://linkedin.com",
+    link: "www.linkedin.com/in/ayush-kankale",
+    external: true,
+  },
+  {
+    id: 4,
+    icon: <Instagram size={24} />,
+    label: "Instagram",
+    link: "https://instagram.com/ayush_kankale",
     external: true,
   },
   {
     id: 5,
-    icon: <Instagram size={24} />,
-    label: "Instagram",
-    link: "https://instagram.com",
+    icon: <Twitter size={24} />,
+    label: "Twitter",
+    link: "https://x.com/AyushKanka74608",
     external: true,
   },
   {
     id: 6,
-    icon: <X size={24} />,
-    label: "Twitter",
-    link: "https://twitter.com",
-    external: true,
-  },
-  {
-    id: 7,
     icon: <Github size={24} />,
     label: "GitHub",
-    link: "https://github.com",
+    link: "https://github.com/dev-code-create",
     external: true,
   },
 ];

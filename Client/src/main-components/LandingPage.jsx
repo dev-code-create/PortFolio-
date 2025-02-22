@@ -1,7 +1,46 @@
 import { Button } from "@/components/ui/button";
 import ThreeBackground from "@/three/ThreeBackground";
 import { motion } from "motion/react";
+import {
+  SiJavascript,
+  SiReact,
+  SiNodedotjs,
+  SiMongodb,
+  SiTailwindcss,
+  SiMysql,
+  SiCplusplus,
+  SiPython,
+  SiExpress,
+} from "react-icons/si";
 export default function LandingPage() {
+  const techStack = [
+    {
+      id: 1,
+      name: "JavaScript",
+      icon: <SiJavascript className="text-yellow-400" />,
+    },
+    { id: 2, name: "React.js", icon: <SiReact className="text-blue-400" /> },
+    {
+      id: 3,
+      name: "Node.js",
+      icon: <SiNodedotjs className="text-green-500" />,
+    },
+    { id: 4, name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
+    {
+      id: 5,
+      name: "Tailwind CSS",
+      icon: <SiTailwindcss className="text-blue-300" />,
+    },
+    { id: 1, name: "React", icon: <SiReact className="text-blue-500" /> },
+    { id: 2, name: "MySQL", icon: <SiMysql className="text-yellow-500" /> },
+    { id: 3, name: "C++", icon: <SiCplusplus className="text-blue-400" /> },
+    { id: 4, name: "Python", icon: <SiPython className="text-yellow-300" /> },
+    {
+      id: 5,
+      name: "Express.js",
+      icon: <SiExpress className="text-gray-300" />,
+    },
+  ];
   return (
     <div className="h-screen flex flex-col justify-center items-center bg-gradient-to-b from-gray-900 to-black text-white">
       <ThreeBackground />
@@ -36,6 +75,32 @@ export default function LandingPage() {
         <Button className="px-6 bg-gray-500 text-lg hover:bg-gray-600 shadow-lg rounded-lg ml-3 border-2 border-gray-500 hover:text-red-200 ">
           Resume
         </Button>
+      </motion.div>
+      {/* Tools & Technologies Section */}
+      {/* Tools & Technologies Section */}
+      <motion.div
+        className="relative z-10 text-center mt-16"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.9 }}
+      >
+        <h1 className="text-2xl font-bold mb-6 text-white">
+          Tools & Technologies
+        </h1>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+          {techStack.map((tech) => (
+            <motion.div
+              key={tech.id}
+              className="flex flex-col items-center p-4 bg-gray-800 rounded-lg shadow-lg "
+              whileHover={{ scale: 1.1, y: -5 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="text-5xl text-blue-400">{tech.icon}</div>
+              <p className="text-sm text-gray-300 mt-2">{tech.name}</p>
+            </motion.div>
+          ))}
+        </div>
       </motion.div>
     </div>
   );
