@@ -7,7 +7,7 @@ import Contact from "./main-components/Contact";
 function App() {
   return (
     <BrowserRouter>
-      <div>
+      <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black">
         <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />} />

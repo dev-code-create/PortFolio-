@@ -68,16 +68,23 @@ export default function LandingPage() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, delay: 0.6 }}
-        className="relative z-10 flex flex-col sm:flex-row gap-3 w-full justify-center"
+        className="relative z-10 flex flex-col sm:flex-row gap-3 w-full sm:w-auto max-w-[300px] sm:max-w-none mx-auto"
       >
-        <Link to="/contact">
-          <Button className="px-6 bg-blue-500 text-base sm:text-lg hover:bg-blue-600 shadow-lg rounded-lg">
+        <Link to="/contact" className="w-full sm:w-auto">
+          <Button className="w-full sm:w-[140px] px-6 py-2.5 bg-blue-500 text-sm sm:text-base hover:bg-blue-600 shadow-lg rounded-lg transition-all duration-300">
             Hire Me
           </Button>
         </Link>
-        <Button className="px-6 bg-gray-500 text-base sm:text-lg hover:bg-gray-600 shadow-lg rounded-lg border-2 border-gray-500 hover:text-red-200">
-          Resume
-        </Button>
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full sm:w-auto"
+        >
+          <Button className="w-full sm:w-[140px] px-6 py-2.5 bg-gray-500 text-sm sm:text-base hover:bg-gray-600 shadow-lg rounded-lg border-2 border-gray-500 hover:text-red-200 transition-all duration-300">
+            Resume
+          </Button>
+        </a>
       </motion.div>
       {/* Tools & Technologies Section */}
       <motion.div
