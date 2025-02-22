@@ -73,7 +73,7 @@ const ProjectsSection = () => {
                   rel="noopener noreferrer"
                   className="text-blue-400 hover:text-blue-600 flex items-center gap-2"
                 >
-                  <FaExternalLinkAlt /> Link
+                  <FaExternalLinkAlt size={18} /> Link
                 </a>
                 <a
                   href={project.github}
@@ -81,7 +81,7 @@ const ProjectsSection = () => {
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-gray-600 flex items-center gap-2"
                 >
-                  <FaGithub /> Github
+                  <FaGithub size={20} /> Github
                 </a>
               </div>
             </motion.div>
