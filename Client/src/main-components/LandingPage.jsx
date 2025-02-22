@@ -76,7 +76,7 @@ export default function LandingPage() {
           </Button>
         </Link>
         <a
-          href="/resume.pdf"
+          href="https://drive.google.com/file/d/1XMCiODc_-zXRybKe7634mIgAu3t_7FCA/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="w-full sm:w-auto"
