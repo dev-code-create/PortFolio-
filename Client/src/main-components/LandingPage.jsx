@@ -12,6 +12,7 @@ import {
   SiPython,
   SiExpress,
 } from "react-icons/si";
+import { Link } from "react-router-dom";
 export default function LandingPage() {
   const techStack = [
     {
@@ -69,9 +70,11 @@ export default function LandingPage() {
         transition={{ duration: 0.5, delay: 0.6 }}
         className="relative z-10 flex flex-col sm:flex-row gap-3 w-full justify-center"
       >
-        <Button className="px-6 bg-blue-500 text-base sm:text-lg hover:bg-blue-600 shadow-lg rounded-lg">
-          Hire Me
-        </Button>
+        <Link to="/contact">
+          <Button className="px-6 bg-blue-500 text-base sm:text-lg hover:bg-blue-600 shadow-lg rounded-lg">
+            Hire Me
+          </Button>
+        </Link>
         <Button className="px-6 bg-gray-500 text-base sm:text-lg hover:bg-gray-600 shadow-lg rounded-lg border-2 border-gray-500 hover:text-red-200">
           Resume
         </Button>
