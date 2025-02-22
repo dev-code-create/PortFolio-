@@ -66,14 +66,22 @@ const ProjectsSection = () => {
                   </span>
                 ))}
               </div>
-              <div>
+              <div className="flex justify-center gap-4 items-center">
                 <a
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-400 hover:text-blue-600"
+                  className="text-blue-400 hover:text-blue-600 flex items-center gap-2"
                 >
-                  <FaExternalLinkAlt />
+                  <FaExternalLinkAlt /> Link
+                </a>
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-gray-600 flex items-center gap-2"
+                >
+                  <FaGithub /> Github
                 </a>
               </div>
             </motion.div>
