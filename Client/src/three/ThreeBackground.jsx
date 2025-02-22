@@ -6,9 +6,8 @@ const RotatingStars = () => {
   const groupRef = useRef();
 
   useFrame(() => {
-    // Rotates the stars continuously on the Y-axis
     if (groupRef.current) {
-      groupRef.current.rotation.y += 0.002; // Adjust speed here
+      groupRef.current.rotation.y += 0.002;
     }
   });
 
