@@ -1,5 +1,10 @@
 import { motion } from "motion/react";
 import { Github, ExternalLink } from "lucide-react";
+import portfolioImage from "../assets/Portfolio.png";
+import ReminderFlow from "../assets/ReminderFlow.png";
+import SkyCast from "../assets/SkyCast.png";
+import RealEstate from "../assets/Real-Estate.png";
+import Interview from "../assets/Interview.png";
 
 const projects = [
   {
@@ -8,9 +13,57 @@ const projects = [
     description:
       "A modern portfolio website built with React, Three.js, and Tailwind CSS featuring smooth animations and 3D elements.",
     tech: ["React", "Three.js", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/dev-code-create/portfolio",
-    live: "https://your-portfolio-url.com",
-    image: "/projects/portfolio.png", // Add your project screenshot
+    github: "https://github.com/dev-code-create/PortFolio-",
+    live: "https://port-folio-three-khaki.vercel.app",
+    image: portfolioImage,
+  },
+  {
+    id: 2,
+    title: "SkillMeet",
+    description:
+      "An interview platform with real-time video calling and an integrated code editor, enabling seamless technical interviews.",
+    tech: ["React", "Nextjs", "Convex", "Framer Motion", "zustand"],
+    github:
+      "https://github.com/dev-code-create/Video-Calling-Interview-Platform-with-Code-Editor",
+    live: "https://video-calling-interview-platform-with-code-editor.vercel.app",
+    image: Interview,
+  },
+  {
+    id: 3,
+    title: "ReminderFlow",
+    description:
+      "ReminderFlow is a next-generation reminder and task management platform designed to help individuals stay organized and Productive.Can set reminders , integrate tasks from google calendar and can also integrate your tasks to google calendar",
+    tech: ["React", "Nodejs", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/dev-code-create/ReminderFlow",
+    live: "https://reminder-flow.vercel.app/",
+    image: ReminderFlow,
+  },
+  {
+    id: 4,
+    title: "SkyCast",
+    description:
+      "SkyCast is a cutting-edge weather forecasting platform designed to provide real-time, accurate weather updates and predictions for any location worldwide.",
+    tech: [
+      "React",
+      "Nextjs",
+      "Nodejs",
+      "OpenWeather-API",
+      "Tailwind CSS",
+      "Framer Motion",
+    ],
+    github: "https://github.com/dev-code-create/Weather-App",
+    live: "https://weather-app-six-beta-88.vercel.app/",
+    image: SkyCast,
+  },
+  {
+    id: 5,
+    title: "HomeVista",
+    description:
+      "A Real Estate website with beautiful Interface which is responsive and animated with framer-motion",
+    tech: ["React", "Framer-motion", "Tailwind CSS"],
+    github: "https://github.com/dev-code-create/Real-Estate-Web-App-",
+    live: "https://real-estate-web-6rtk4302l-ayush-kankales-projects.vercel.app",
+    image: RealEstate,
   },
   // Add more projects here
 ];
