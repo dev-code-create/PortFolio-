@@ -16,6 +16,7 @@ const projects = [
     github: "https://github.com/dev-code-create/PortFolio-",
     live: "https://port-folio-three-khaki.vercel.app",
     image: portfolioImage,
+    status: "Completed",
   },
   {
     id: 2,
@@ -27,16 +28,18 @@ const projects = [
       "https://github.com/dev-code-create/Video-Calling-Interview-Platform-with-Code-Editor",
     live: "https://video-calling-interview-platform-with-code-editor.vercel.app",
     image: Interview,
+    status: "Completed",
   },
   {
     id: 3,
     title: "ReminderFlow",
     description:
-      "ReminderFlow is a next-generation reminder and task management platform designed to help individuals stay organized and Productive.Can set reminders , integrate tasks from google calendar and can also integrate your tasks to google calendar",
+      "ReminderFlow is a next-generation reminder and task management platform designed to help individuals stay organized and productive. It can set reminders, integrate tasks from Google Calendar, and more.",
     tech: ["React", "Nodejs", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/dev-code-create/ReminderFlow",
     live: "https://reminder-flow.vercel.app/",
     image: ReminderFlow,
+    status: "In Progress",
   },
   {
     id: 4,
@@ -54,16 +57,18 @@ const projects = [
     github: "https://github.com/dev-code-create/Weather-App",
     live: "https://weather-app-six-beta-88.vercel.app/",
     image: SkyCast,
+    status: "Completed",
   },
   {
     id: 5,
     title: "HomeVista",
     description:
-      "A Real Estate website with beautiful Interface which is responsive and animated with framer-motion",
+      "A Real Estate website with a beautiful interface that is responsive and animated with Framer Motion.",
     tech: ["React", "Framer-motion", "Tailwind CSS"],
     github: "https://github.com/dev-code-create/Real-Estate-Web-App-",
     live: "https://real-estate-web-6rtk4302l-ayush-kankales-projects.vercel.app",
     image: RealEstate,
+    status: "Completed",
   },
   // Add more projects here
 ];
@@ -123,9 +128,20 @@ export default function ProjectsSection() {
 
               {/* Project Info */}
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">
-                  {project.title}
-                </h3>
+                <div className="flex justify-between items-center mb-2">
+                  <h3 className="text-xl font-semibold text-white">
+                    {project.title}
+                  </h3>
+                  <span
+                    className={`text-xs px-2 py-1 rounded-full ${
+                      project.status === "Completed"
+                        ? "bg-green-500 text-white"
+                        : "bg-yellow-500 text-white"
+                    }`}
+                  >
+                    {project.status}
+                  </span>
+                </div>
                 <p className="text-gray-400 text-sm mb-4">
                   {project.description}
                 </p>
