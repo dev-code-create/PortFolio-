@@ -37,7 +37,7 @@ const projects = [
       "ReminderFlow is a next-generation reminder and task management platform designed to help individuals stay organized and productive. It can set reminders, integrate tasks from Google Calendar, and more.",
     tech: ["React", "Nodejs", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/dev-code-create/ReminderFlow",
-    live: "reminder-flow-eight.vercel.app",
+    live: "https://reminder-flow-eight.vercel.app",
     image: ReminderFlow,
     status: "Completed",
   },
